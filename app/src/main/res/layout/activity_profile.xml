@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#CA5151"
+
+    >
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_naviagtion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/yellow"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/imageViewprofilepic"
+        android:layout_width="240dp"
+        android:layout_height="158dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="87dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="505dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <Button
+        android:id="@+id/buttonchangephoto"
+        style="@style/Widget.AppCompat.ActionButton.CloseMode"
+        android:layout_width="125dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#FFFFFF"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="141dp"
+
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="462dp"
+        android:text="Change photo" />
+
+    <TextView
+        android:id="@+id/textViewuser"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="675dp"
+        android:gravity="center"
+        android:text="Username"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewnameprofile"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="111dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="354dp"
+
+        android:text="Name"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textViewemailprofile"
+        android:layout_width="268dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="289dp"
+
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="312dp"
+        android:layout_marginBottom="352dp"
+        android:text="Name:"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="404dp"
+        android:layout_marginEnd="315dp"
+        android:layout_marginBottom="289dp"
+
+        android:text="Email:"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/buttonChangePasswordPr"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="230dp"
+        android:layout_marginBottom="154dp"
+        android:background="@drawable/rounded_button"
+        android:text="Change Password" />
+
+    <Button
+        android:id="@+id/buttonlogoutPr"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="230dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="153dp"
+        android:background="@drawable/rounded_button"
+        android:text="Logout" />
+
+
+</RelativeLayout>

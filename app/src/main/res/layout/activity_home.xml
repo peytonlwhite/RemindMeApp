@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#CA5151"
+
+    >
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_naviagtion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/yellow"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButtonaddreminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="100dp"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/textViewtodayalarms"
+        android:layout_width="163dp"
+        android:textColor="#FFFFFF"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="678dp"
+        android:text="Alarms Today"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewtodayalarms2"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+
+        android:layout_marginTop="323dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="376dp"
+        android:text="Upcoming Alarms"
+        android:textSize="24sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listviewupcoming"
+        android:layout_width="match_parent"
+        android:layout_height="291dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="73dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listviewtoday"
+        android:layout_width="match_parent"
+        android:layout_height="252dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="417dp" />
+
+
+</RelativeLayout>
